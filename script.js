@@ -1,54 +1,49 @@
 const caixaPrincipal = document.querySelector('.caixa-principal');
-const caixaPerguntas = document.querySelector('.caixa-principal');
-const caixaAlternativas = document.querySelector('.caixa-principal');
-const caixaResultado = document.querySelector('.caixa-principal');
-const textoResultado = document.querySelector('.caixa-principal');
+const caixaPerguntas = document.querySelector('.caixa-perguntas');
+const caixaAlternativas = document.querySelector('.caixa-alternativas');
+const caixaResultado = document.querySelector('.caixa-resultado');
+const textoResultado = document.querySelector('.texto-resultado');
 
 const perguntas = [
     {
-        enunciado: "Dilema Social, o você escolhe?",
+        enunciado: "No âmbito social, você prefere:",
         alternativas: [
             {
-                texto: "Fazer a redistribuição de riqueza geral entre as pessoas, eliminando a desigualdade social, mas descriminalizar internacionalmente o Racismo.",
-                afirmação: "afirmação",
+                texto: "alternativa 1",
+                afirmacao: "afirmação",
             },
             {
-                texto: "Eliminar permanentemente a ocorrência de práticas sexuais criminosas (pedofilia, necrofilia, zoofilia…), mas tirar todos os homens dos cargos de liderança social e empresarial.",
-                afirmação: "afirmação",
-            }
-
+                texto: "alternativa 2",
+                afirmacao: "afirmação",
+            },
         ]
     },
-
     {
-        enunciado: "Dilema Ambiental, o você escolhe?",
+        enunciado: "No âmbito ambiental, você prefere:",
         alternativas: [
             {
-                texto: "O surgimento de uma fonte inesgotável de água potável, garantindo a subsistência das nações futuras,  mas descriminalizar a caça irregulamentada de animais silvestres.",
-                afirmação: "afirmação",
+                texto: "alternativa 3",
+                afirmacao: "afirmação",
             },
             {
-                texto: "Petrificar o aquecimento global no estágio já atingido de danificação, impedindo o agravamento de seus problemas, mas tornar todas as praias e mares inabitáveis e inacessíveis para seres humanos.",
-                afirmação: "afirmação",
-            }
-
+                texto: "alternativa 4",
+                afirmacao: "afirmação",
+            },
         ]
     },
-
     {
-        enunciado: "Dilema Tecnológico, o você escolhe?",
+        enunciado: "No âmbito tecnológico, você prefere:",
         alternativas: [
             {
-                texto: "Possibilitar a cura do câncer através de substituição cibernética de órgãos atingidos, mas só alcançar tal solução usando pessoas em situação de rua como cobaias obrigatoriamente fatais.",
-                afirmação: "afirmação",
+                texto: "alternativa 5",
+                afirmacao: "afirmação",
             },
             {
-                texto: "A criação de um sistema universal de distribuição de alimentos e recursos, abolindo a fome no mundo, mas também universalizar o monitoramento constante de todas as atitudes individuais por inteligência do governo.",
-                afirmação: "afirmação",
-            }
-
+                texto: "alternativa 6",
+                afirmacao: "afirmação",
+            },
         ]
-    }
+    },
 ]
 
 let atual = 0;
@@ -61,12 +56,12 @@ function mostraPergunta (){
     mostraAlternativa();
 }
 
-function mostraAlternativa () {
+function mostraAlternativa (){
     for (const pergunta of perguntaAtual.alternativas) {
-        const botaoAlternativa = document.createElement('button');
-        botaoAlternativa.textContent = pergunta;
-        caixaAlternativas.appendChild(botaoAlternativa);
+       const botaoAlternativa = document.createElement('button');
+       botaoAlternativa.textContent = pergunta;
+       caixaAlternativas.appendChild(botaoAlternativa);
     }
 }
 
-mostraPergunta ();
+mostraPergunta();
