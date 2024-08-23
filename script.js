@@ -51,7 +51,7 @@ let perguntaAtual;
 let hitoriafinal = " ";
 
 function mostraPergunta (){
-    if (atual >= perguntas.lenght){
+    if (atual >= perguntas.length){
         motraResultado ();
         return;
     }
