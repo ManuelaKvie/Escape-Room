@@ -48,8 +48,13 @@ const perguntas = [
 
 let atual = 0;
 let perguntaAtual;
+let hitoriafinal = " ";
 
 function mostraPergunta (){
+    if (atual >= perguntas.lenght){
+        motraResultado ();
+        return
+    }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.textContent ="";
@@ -59,13 +64,23 @@ function mostraPergunta (){
 function mostraAlternativa (){
     for (const pergunta of perguntaAtual.alternativas) {
        const botaoAlternativa = document.createElement('button');
-       botaoAlternativa.textContent = pergunta;
-       botaoAlternativa.addEventListener("click", function(){
-        atual++; 
-        mostraPergunta ();     
-     })
+       botaoAlternativa.textContent = pergunta.texto;
+       botaoAlternativa.addEventListener("click", ()=> respotasSelecionada (pergunta));
        caixaAlternativas.appendChild(botaoAlternativa);
     }
+}
+
+function respotasSelecionada (pergunta){
+    const afirmações = pergunta.afirmação;
+    hitoriafinal += afirmações + " ";
+    atual++; 
+    mostraPergunta ();  
+}
+
+function motraResultado (){
+    caixaPerguntas.textContent = "Parabéns, você escolheu...";
+    caixaResultado.textContent = hitoriafinal;
+    caixaAlternativas.textContent = " ";
 }
 
 mostraPergunta();
