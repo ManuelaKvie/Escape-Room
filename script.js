@@ -53,7 +53,7 @@ let hitoriafinal = " ";
 function mostraPergunta (){
     if (atual >= perguntas.lenght){
         motraResultado ();
-        return
+        return;
     }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
