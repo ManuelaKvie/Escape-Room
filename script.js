@@ -14,7 +14,7 @@ const perguntas = [
             },
             {
                 texto: "Eliminar permanentemente a ocorrência de práticas sexuais criminosas (pedofilia, necrofilia, zoofilia…), mas tirar todos os homens dos cargos de liderança social e empresarial.",
-                afirmacao: "Parabéns! Crimees sexuais não existem mais. Entretanto, agora o cenário patriarcal se reverteu e os homens terão que lutar por seus direitos básicos.",
+                afirmacao: "Parabéns! Crimes sexuais não existem mais. Entretanto, agora o cenário patriarcal se reverteu e os homens terão que lutar por seus direitos básicos.",
             },
         ]
     },
@@ -23,7 +23,7 @@ const perguntas = [
         alternativas: [
             {
                 texto: "O surgimento de uma fonte inesgotável de água potável, garantindo a subsistência das nações futuras,  mas descriminalizar a caça irregulamentada de animais silvestres.",
-                afirmacao: "A fauna mundial, 50 anos depois se resume a três espécies domésticas, e a sociedade prev~e um fim breve pelo desequilíbrio dos sistemas ambientais.",
+                afirmacao: "A fauna mundial, 50 anos depois se resume a três espécies domésticas, e a sociedade prevê um fim breve pelo desequilíbrio dos sistemas ambientais.",
             },
             {
                 texto: "Petrificar o aquecimento global no estágio já atingido de danificação, impedindo o agravamento de seus problemas, mas tornar todas as praias e mares inabitáveis e inacessíveis para seres humanos.",
